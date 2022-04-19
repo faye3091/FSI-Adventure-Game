@@ -11,8 +11,6 @@ if (firstAnswer === "left") {
     let thirdAnswer = window.prompt(
       "You come across a chamber that reaches upward to a shining light above. There is a long, winding staircase, and a much quicker, but rickety-looking ladder that leads up toward the light. Which do you take? ladder or staircase?"
     );
-
-    while (true);
     //left -> continue -> ladder
     if (thirdAnswer === "ladder") {
       window.alert(
@@ -46,9 +44,10 @@ if (firstAnswer === "left") {
       );
     }
   }
+}
 
-  //right
-} else if (firstAnswer === "right") {
+//right
+else if (firstAnswer === "right") {
   let secondAnswer = window.prompt(
     "You come across a snoring dragon. On the other side of him, you see a shiny chest of treasure. Another path would lead you away from the dragon altogether. Which path do you take? past or away"
   );
