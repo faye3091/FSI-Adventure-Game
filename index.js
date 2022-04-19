@@ -65,10 +65,11 @@ else if (firstAnswer === "right") {
       );
     }
     //right -> past -> run
-    else if (thirdAnswer === "run")
+    else if (thirdAnswer === "run") {
       window.alert(
         "Quickly, you run back to the cave's entrance. Sheepish, you return home."
       );
+    }
   }
 
   //right -> away
