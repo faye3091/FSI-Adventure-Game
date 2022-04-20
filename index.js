@@ -115,9 +115,15 @@ else if (firstAnswer === "right") {
         "You pick the flower and bring it home, and all marvel at its brilliance. However, over time it fades and eventually crumbles to dust."
       );
     }
+    //this is to alert the user that he/she made a mistake in typing.
+    else if (secondAnswer != "draw" || "pick") {
+      window.alert(
+        "Start all over and type the exact letters. Please refresh page."
+      );
+    }
   }
   //this is to alert the user that he/she made a mistake in typing.
-  else if (secondAnswer != "past" && "away") {
+  else if (secondAnswer != "past" || "away") {
     window.alert(
       "Start all over and type the exact letters. Please refresh page."
     );
@@ -125,7 +131,7 @@ else if (firstAnswer === "right") {
 }
 
 //this is to alert the user that he/she made a mistake in typing.
-else if (firstAnswer != "right" && "left") {
+else if (firstAnswer != "right" || "left") {
   window.alert(
     "Start all over and type the exact letters. Please refresh page."
   );
