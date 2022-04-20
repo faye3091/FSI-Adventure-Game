@@ -11,6 +11,7 @@ if (firstAnswer === "left") {
     let thirdAnswer = window.prompt(
       "You come across a chamber that reaches upward to a shining light above. There is a long, winding staircase, and a much quicker, but rickety-looking ladder that leads up toward the light. Which do you take? ladder or staircase?"
     );
+
     //left -> continue -> ladder
     if (thirdAnswer === "ladder") {
       window.alert(
@@ -21,6 +22,12 @@ if (firstAnswer === "left") {
     else if (thirdAnswer === "staircase") {
       window.alert(
         "After ascending the staircase, you discover a shiny blue stone, which you take home and cherish forever."
+      );
+    }
+    //this is to alert the user that he/she made a mistake in typing.
+    else if (thirdAnswer != "ladder" && "staircase") {
+      window.alert(
+        "Start all over and type the exact letters. Please refresh page."
       );
     }
   }
@@ -43,6 +50,18 @@ if (firstAnswer === "left") {
         "After leaving the cat colony, you are never able to find it again; without proof, no one believes your story, which passes into legend nonetheless."
       );
     }
+    //this is to alert the user that he/she made a mistake in typing.
+    else if (thirdAnswer != "stay" && "alert") {
+      window.alert(
+        "Start all over and type the exact letters. Please refresh page."
+      );
+    }
+  }
+  //this is to alert the user that he/she made a mistake in typing.
+  else if (secondAnswer != "continue" && "follow") {
+    window.alert(
+      "Start all over and type the exact letters. Please refresh page."
+    );
   }
 }
 
@@ -70,6 +89,12 @@ else if (firstAnswer === "right") {
         "Quickly, you run back to the cave's entrance. Sheepish, you return home."
       );
     }
+    //this is to alert the user that he/she made a mistake in typing.
+    else if (thirdAnswer != "stay" && "run") {
+      window.alert(
+        "Start all over and type the exact letters. Please refresh page."
+      );
+    }
   }
 
   //right -> away
@@ -91,4 +116,17 @@ else if (firstAnswer === "right") {
       );
     }
   }
+  //this is to alert the user that he/she made a mistake in typing.
+  else if (secondAnswer != "past" && "away") {
+    window.alert(
+      "Start all over and type the exact letters. Please refresh page."
+    );
+  }
+}
+
+//this is to alert the user that he/she made a mistake in typing.
+else if (firstAnswer != "right" && "left") {
+  window.alert(
+    "Start all over and type the exact letters. Please refresh page."
+  );
 }
